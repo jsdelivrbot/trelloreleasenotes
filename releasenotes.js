@@ -1,7 +1,6 @@
 var t = TrelloPowerUp.iframe();
 
 window.releasenotes.addEventListener('submit', function(event){
-  // Stop the browser trying to submit the form itself.
   event.preventDefault();
   return t.set('card', 'shared', 'releasenotes', window.releaseNoteData.value)
   .then(function(){
@@ -11,4 +10,14 @@ window.releasenotes.addEventListener('submit', function(event){
 
 t.render(function(){
   t.sizeTo('#releasenotes').done();
+});
+
+t.render(function(){
+  return t.get('card', 'shared', 'releasenotes')
+  .then(function(releasenotes){
+    window.releaseNoteData.value = releasenotes;
+  })
+  .then(function(){
+	t.sizeTo('#releasenotes').done();
+  });
 });
