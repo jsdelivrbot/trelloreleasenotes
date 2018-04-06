@@ -6,7 +6,7 @@ TrelloPowerUp.initialize({
 	  callback: function(t){
 		  return t.popup({
 		  title: "Release Notes",
-		  url: 'https://rawgit.com/stevesefchick/trelloreleasenotes/master/releasenoteselection.html'
+		  url: 'https://rawgit.com/stevesefchick/trelloreleasenotes/master/releasenotes.html'
 		  
 	  });
 		  
