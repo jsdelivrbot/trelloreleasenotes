@@ -18,7 +18,8 @@ TrelloPowerUp.initialize({
 		.then(function(releasenotes) {
 			console.log(releasenotes);
 				return [{
-				  icon: releasenotes ? null : 'https://cdn.glitch.com/c69415fd-f70e-4e03-b43b-98b8960cd616%2Frocket-ship-grey.png?1496162964717'
+				 // icon: releasenotes ? null : 'https://cdn.glitch.com/c69415fd-f70e-4e03-b43b-98b8960cd616%2Frocket-ship-grey.png?1496162964717'
+				  icon: releasenotes ? 'https://cdn.glitch.com/c69415fd-f70e-4e03-b43b-98b8960cd616%2Frocket-ship-grey.png?1496162964717'
 				}];
 		});
 	},
